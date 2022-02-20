@@ -1,59 +1,42 @@
 # Docsy Example
 
 [Docsy][] is a [Hugo theme][] for technical documentation sites, providing easy
-site navigation, structure, and more. This **Docsy Example Project** uses the
-Docsy theme and provides a skeleton documentation structure for you to use. You
-can clone/copy this project and edit it with your own content, or use it as an
-example.
+site navigation, structure, and more. 
 
-In this project, the Docsy theme is included as a Git submodule:
+In this project, I'm playing around hugo and docsy template for adoption on Cluster API.
 
-```bash
-$ git submodule
-...<hash>... themes/docsy (remotes/origin/HEAD)
-```
+## TODO
 
-You can find detailed theme instructions in the [Docsy user guide][].
+There is still a long way to do...
 
-This Docsy Example Project is hosted on [Netlify][] at [example.docsy.dev][].
-You can view deploy logs from the [deploy section of the project's Netlify
-dashboard][deploys], or this [alternate dashboard][].
+### Look and feel
 
-This is not an officially supported Google product. This project is currently maintained.
+- [ ] make sure featured-background on "home", "about" and "community" scales properly on xl screens
+- [ ] on small devices convert navbar menu to drop list
+- [ ] prevent .td-sidebar to go under the logo when scrolling down
+- [ ] 404
+- [ ] figure out how to share the same featured-background on "home", "about" and "community" without duplicating it
+- [ ] give credits for the featured-background to https://unsplash.com/photos/KABfjuSOx74 
 
-## Using the Docsy Example Project as a template
+### Missing features
 
-A simple way to get started is to use this project as a template, which gives you a site project that is set up and ready to use. To do this: 
+- [ ] Link checker
+- [ ] Embed github (iframe??)
 
-1. Click **Use this template**.
+### Content
 
-2. Select a name for your new project and click **Create repository from template**.
+- [ ] complete work on "home", "about" and "community"
+  - [ ] thing to key messages in home (multi cloud, like Kubernetes, manage etc, might be an example)
+  - [ ] ensure "about" and "community" can have look and feel like home page at top and content below
+- [ ] validate the idea of three main doc area (user, provider, developer)
+  - [ ] map existing docs on those area
+  - [ ] validate if to show them in navbar (and eventually drop documentation)
 
-3. Make your own local working copy of your new repo using git clone, replacing https://github.com/me/example.git with your repo’s web URL:
+### Miscellaneus
 
-```bash
-git clone --recurse-submodules --depth 1 https://github.com/me/example.git
-```
-
-You can now edit your own versions of the site’s source files.
-
-If you want to do SCSS edits and want to publish these, you need to install `PostCSS`
-
-```bash
-npm install
-```
-
-## Running the website locally
-
-Building and running the site locally requires a recent `extended` version of [Hugo](https://gohugo.io).
-You can find out more about how to install Hugo for your environment in our
-[Getting started](https://www.docsy.dev/docs/getting-started/#prerequisites-and-installation) guide.
-
-Once you've made your working copy of the site repo, from the repo root folder, run:
-
-```
-hugo server
-```
+- [ ] Investigate if to preserve the sub module to get theme updates or drop
+- [ ] Check how to move everything to sub folder (except build and netlify)
+- [ ] Check integration with netlify
 
 ## Running a container locally
 
